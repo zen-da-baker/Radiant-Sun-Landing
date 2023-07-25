@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color:black;
+}
+
+.nav-link {
+    color:black;
+}
+.nav-link:hover {
+    color:gray;
+}
+.gray-link {
+    color:black;
+}
+.gray-link:hover {
+    color:gray;
+}
+
+.navbar-nav > li {
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.container {
+    padding-top:20px;
+    padding-bottom:20px;
+}
+/*
+.card {
+    background-color:#F6EFE4;
+}
+*/
+
+.dark-mode {
+    background-color:black;
+    color:white;
+
+    .mode-button {
+        background-color:white;
+        color:black;
+    }
+
+    .card {
+        background-color:black;
+    }
+
+    .border-dark {
+        border:2px solid white;
+        outline-style:solid;
+        outline-color:white;
+    }
+
+    .btn-outline-secondary {
+        color:white;
+        border:1px solid #9DA5AF;
+        outline-style:solid;
+        outline-color:#9DA5AF;
+    }
+
+    .btn-outline-dark {
+        color:white;
+        border:1px solid #9DA5AF;
+        outline-style:solid;
+        outline-color:#9DA5AF;
+    }
+
+    .btn-dark {
+        color:white;
+        border:1px solid #9DA5AF;
+        outline-style:solid;
+        outline-color:#9DA5AF;
+        background-color:black;
+    }
+
+    .btn-outline-light:hover {
+        color:black;
+    }
+
+    .btn.active {
+        color:black;
+    }
+
+    .gray-link {
+        color:white;
+    }
+    .gray-link:hover {
+        color:gray;
+    }
+
+    .nav-link {
+        color:white;
+    }
+    .nav-link:hover {
+        color:gray;
+    }
+}
+.dark-mode {
+    animation-name:text-fade;
+    animation-duration:0.5s;
+}
