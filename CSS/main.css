@@ -2,6 +2,9 @@ body {
     font-family: 'Poppins', sans-serif;
     color:black;
 }
+nav {
+    background-color: #850805;
+}
 
 .nav-link {
     color:black;

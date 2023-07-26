@@ -1,40 +1,37 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Favicon and title -->
-    <title>Izzy Arcinue</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- Google Fonts for Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-    <!-- Awesomefont Free Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Favicon and title -->
+        <title>Radiant Sun</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     
-    <!-- Local css stylesheet -->
-    <link href="CSS/main.css" rel="stylesheet">
-
-    <!-- Darkmode button scripts-->
-    <script src="javascript/darkMode.js"></script>
-    <script src="javascript/toggleButton.js"></script>
-    <script src="javascript/activeButton.js"></script>
-    <script src="javascript/darkModePersistent.js"></script>
-  </head>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <!-- Google Fonts for Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+        <!-- Awesomefont Free Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Local css stylesheet -->
+        <link href="CSS/main.css" rel="stylesheet">
+      </head>
 
   <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="height:75px;">
-        <a class="navbar-brand" href="index.html" style="padding-left:20px">Izzy A</a>
+        <a class="navbar-brand" href="index.html" style="padding-left:20px">
+            <img src="images/SilverSunValkyrie.png" style="width:40px;">
+            Radiant Sun
+        </a>
 
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation" style="padding-right:10px;">
             <span class="navbar-toggler-icon"></span>
@@ -56,7 +53,7 @@
                                 <br>
                 
                                 <li class="nav-item">
-                                    <a class="btn btn-outline-light" href="portfolio.html" role="button">Portfolio</a>
+                                    <a class="btn btn-outline-light" href="demo.html" role="button">Demo</a>
                                 </li>
 
                                 <br>
@@ -71,18 +68,18 @@
 
                     <div class="col"></div>
                 
-                    <div class="col">
+                    <div class="col-6">
                         <div class="container">
 
                             <ul class="navbar-nav gy-3">
                                 <li class="nav-item">
-                                    <a class="btn btn-outline-info" href="https://www.linkedin.com/in/izzy-arcinue/" role="button" target="_blank">
-                                        <i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                                    <a href="/images/Gamespawn Logo.svg" type="button" class="btn btn-outline-light" target="_blank" download>
+                                        <img src="images/Unofficial_Windows_logo_variant_-_2002–2012_(Multicolored).svg" style="height:30px"> Download Windows Version</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <button class="btn btn-outline-light" role="button" onclick="toggleDarkMode();toggleButtonStyle();activeButton();" id="modeButton">
-                                        <i class="fa fa-moon-o"></i> Dark Mode</button> 
+                                    <a href="/images/Gamespawn Logo.svg" type="button" class="btn btn-outline-light" target="_blank" download>
+                                        <img src="images/Apple_Computer_Logo_rainbow.svg" style="height:30px"> Download Mac Version</a>
                                 </li>
                             </ul>
                             
@@ -104,7 +101,7 @@
                         <br>
         
                         <li class="nav-item">
-                            <a class=" nav-link" href="portfolio.html">Portfolio</a>
+                            <a class=" nav-link" href="demo.html">Demo</a>
                         </li>
 
                         <br>
@@ -116,15 +113,8 @@
                         <br>
 
                         <li class="nav-item">
-                            <a class="nav-link text-info" href="https://www.linkedin.com/in/izzy-arcinue/" target="_blank">
-                                <i class="fa fa-linkedin-square"></i> LinkedIn</a>
-                        </li>
-
-                        <br>
-
-                        <li class="nav-item">
-                            <button class="btn btn-outline-light" role="button" onclick="toggleDarkMode();toggleButtonStyle()" id="modeButton">
-                                <i class="fa fa-moon-o"></i> Dark Mode</button> 
+                            <a href="https://gamespawn.github.io/index.html" type="button" class="btn btn-outline-light" target="_blank">
+                                <img src="images/Gamespawn Logo.svg" style="width:30px"> Gamespawn</a> 
                         </li>
                     </ul>
         
@@ -139,22 +129,17 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 style="font-size:5rem;">My Story</h1>
+                <h1 style="font-size:5rem;">Our Game</h1>
             </div>
 
             <div class="col">
                 <div>
                     <p>
-                        Still in the early stages of my career, I've made accomplishments and learned under two companies, 
-                        Innovetive Petcare and LifeHikes, as a marketing intern. Because of my experiences, I was inspired to pursue 
-                        digital marketing as a profession and enrolled in a bootcamp hosted by UT Austin, where I'm currently working 
-                        on various projects related to digital and content strategy.
+                        Paragraph One
                     </p>
         
                     <p>
-                        At UC Riverside, I studied film and served as the Vice President of the game development organization at 
-                        University of California, Riverside. This experience gifted me the ability to lead a community of gaming enthusiasts, 
-                        host writing and career-readiness workshops, and support the future generation of game developers.
+                        Paragraph Two
                     </p>
                 </div>
             </div>
@@ -164,10 +149,159 @@
         <div class="row">
             <div class="col"></div>
             <div class="col-2">
-                <a class="btn btn-outline-dark" href="portfolio.html" role="button">See My Projects</a>
+                <a class="btn btn-outline-dark" href="demo.html" role="button">See Our Project</a>
             </div>
             <div class="col"></div>
         </div>
+    </div>
+
+    <div class="container">
+        <h1>Our Team</h1>
+
+        <div class="row row-cols-2 g-3">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Angel</h3>
+                        </div>
+
+                        <p class="card-text">Producer, Writer, & Director</p>
+                        <p class="card-text">Personal description</p>
+                        <a href="#" target="_blank" class="card-link btn btn-outline-dark">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Donovan</h3>
+                        </div>
+
+                        <p class="card-text">Writer & Web Designer</p>
+                        <p class="card-text">Personal description</p>
+                        <a href="#" target="_blank" class="card-link btn btn-outline-dark">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Jesse</h3>
+                        </div>
+
+                        <p class="card-text">Music</p>
+                        <p class="card-text">Personal description</p>
+                        <a href="#" target="_blank" class="card-link btn btn-outline-dark">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Flora</h3>
+                        </div>
+
+                        <p class="card-text">Art</p>
+                        <p class="card-text">Personal description</p>
+                        <a href="#" target="_blank" class="card-link btn btn-outline-dark">Link</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Edwin</h3>
+                        </div>
+
+                        <p class="card-text">Programmer</p>
+                        <p class="card-text">Personal description</p>
+                        <a href="#" target="_blank" class="card-link btn btn-outline-dark">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Aramis</h3>
+                        </div>
+
+                        <p class="card-text">Programmer</p>
+                        <p class="card-text">Personal description</p>
+                        <a href="#" target="_blank" class="card-link btn btn-outline-dark">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Daphne</h3>
+                        </div>
+
+                        <p class="card-text">Programmmer</p>
+                        <p class="card-text">Personal description</p>
+                        <a href="#" target="_blank" class="card-link btn btn-outline-dark">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Peter</h3>
+                        </div>
+
+                        <p class="card-text">Programmer</p>
+                        <p class="card-text">Personal description</p>
+                        <a href="#" target="_blank" class="card-link btn btn-outline-dark">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>JH</h3>
+                        </div>
+
+                        <p class="card-text">Beta Tester</p>
+                        <p class="card-text">Personal description</p>
+                        <a href="#" target="_blank" class="card-link btn btn-outline-dark">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Braxton</h3>
+                        </div>
+
+                        <p class="card-text">Beta Tester</p>
+                        <p class="card-text">Personal description</p>
+                        <a href="#" target="_blank" class="card-link btn btn-outline-dark">Link</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
     </div>
 
     <footer class="py-3 my-4" style="padding-bottom:0px;">
@@ -179,15 +313,20 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="portfolio.html" class="nav-link px-2">Portfolio</a>
+                    <a href="demo.html" class="nav-link px-2">Demo</a>
                 </li>
 
                 <li class="nav-item">
                     <a href="about.html" class="nav-link px-2">About</a>
                 </li>
+
+                <li class="nav-item">
+                    <a href="https://gamespawn.github.io/" class="nav-link px-2" target="_blank">
+                        <i src="images/Gamespawn Logo.svg"></i> Gamespawn</a>
+                </li>
             </ul>
 
-            <p class="text-center">&copy; 2023 Izzy Arcinue</p>
+            <p class="text-center">&copy; 2023 Silver Sun Devs</p>
         </div>
     </footer>
 
