@@ -101,3 +101,14 @@ nav {
     animation-name:text-fade;
     animation-duration:0.5s;
 }
+
+#gameBackground {
+    height: 780px;
+    width: 100vw;
+}
+
+@media screen and (max-width: 480px) {
+    #gameBackground {
+        height: 480px;
+    }
+}
