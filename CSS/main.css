@@ -1,3 +1,10 @@
+/*
+    1. Global
+*/
+
+/* 1. Global
+======================================================= */
+
 body {
     font-family: 'Poppins', sans-serif;
     color:black;
@@ -28,11 +35,11 @@ nav {
     padding-top:20px;
     padding-bottom:20px;
 }
-/*
+
 .card {
-    background-color:#F6EFE4;
+    background-color: hsl(30, 10%, 95%);
 }
-*/
+
 
 .dark-mode {
     background-color:black;
