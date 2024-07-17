@@ -1,16 +1,53 @@
 /*
     1. Global
+    2. Typography
+    3. Structure
+    4. Components
+    5. Responsive Design
 */
 
 /* 1. Global
 ======================================================= */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    overflow: auto;
+}
+
+/* 2. Typography
+======================================================= */
+
 body {
     font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+h1 {
+    font-family: 'Comic Sans', sans-serif;
+}
+
+.gray-link {
     color:black;
 }
+.gray-link:hover {
+    color:gray;
+}
+
+/* 3. Structure
+======================================================= */
+
 nav {
     background-color: #850805;
+}
+
+#nav {
+    height: 5rem;
+    margin: 0;
 }
 
 .nav-link {
@@ -19,12 +56,7 @@ nav {
 .nav-link:hover {
     color:gray;
 }
-.gray-link {
-    color:black;
-}
-.gray-link:hover {
-    color:gray;
-}
+
 
 .navbar-nav > li {
     padding-left:5px;
@@ -32,15 +64,66 @@ nav {
 }
 
 .container {
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .card {
     background-color: hsl(30, 10%, 95%);
 }
 
+/* 4. Components
+======================================================= */
 
+#gameBackground {
+    height: 92vh;
+    width: 100vw;
+
+/*    background-image: url('../images/ds_background.png'); */
+    position: relative;
+}
+
+#frame {
+    top: 14vh; 
+    left: 16.5vw; 
+    position: absolute;
+
+    width: 66.8vw;
+    height: 82vh;
+
+    /*
+    width: 1280px;
+    height: 720px;
+    */
+}
+
+#back-to-top {
+    position: fixed;
+    top: 90%;
+    left: 90%;
+}
+
+/* 5. Responsive Design
+======================================================= */
+
+@media only screen and (max-width: 720) {
+    .desktop {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #gameBackground {
+        height: 480px;
+    }
+}
+
+
+
+
+
+
+/*
 .dark-mode {
     background-color:black;
     color:white;
@@ -108,14 +191,6 @@ nav {
     animation-name:text-fade;
     animation-duration:0.5s;
 }
+*/
 
-#gameBackground {
-    height: 780px;
-    width: 100vw;
-}
 
-@media screen and (max-width: 480px) {
-    #gameBackground {
-        height: 480px;
-    }
-}

@@ -21,18 +21,19 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <!-- Local css stylesheet -->
-        <link href="CSS/main.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">
 
         <!-- JavaScript -->
          <script src="scripts/scroll.js"></script>
+         <script src="scripts/fullscreen.js"></script>
       </head>
 
   <body>
 
     <!-- Navbar -->
-    <div class="container">
+    <div>
         <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="height:75px;">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
 
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation" style="padding-right:10px;">
                     <span class="navbar-toggler-icon"></span>
@@ -81,22 +82,24 @@
     </div>
     
 
-    <div style="padding-top:75px"></div>
     <!-- Content of site -->
 
     <!-- Game Window -->
-    <div id="gameBackground" style="background-image: url('images/ds_background.png'); position:relative;">
+    <!-- <div id="gameBackground" class="desktop"> -->
+        <img src="images/ds_background.png" alt="DS background" id="gameBackground" />
         <div class="container">
             
-            <iframe style="top:60px; left:320px; position:absolute;"
-                width="1280" height="720"
+            <iframe 
+                id="frame"
                 src="demo/index.html" title="Radiant Sun" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowfullscreen>
             </iframe>
+
+            <a href="#" id="fullscreen" class="btn btn-secondary">Fullscreen</a>
             
         </div>
-    </div>
+    <!-- </div> -->
 
     <div class="container">
         <div class="row">
@@ -501,7 +504,7 @@
                 &copy; 2023 Radiant Sun Devs
             </p>
 
-            <a href="#" id="back-to-top">Back to Top</a>
+            <a href="#" class="btn btn-secondary" id="back-to-top">Back to Top</a>
         </div>
     </footer>
         
