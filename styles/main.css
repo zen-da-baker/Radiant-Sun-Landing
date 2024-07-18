@@ -76,6 +76,11 @@ nav {
     margin: 0;
 }
 
+#game-demos {
+    border: 0.5rem solid black;
+    margin-top: 5rem;
+}
+
 /* 4. Components
 ======================================================= */
 
