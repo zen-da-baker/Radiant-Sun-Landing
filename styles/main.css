@@ -45,6 +45,11 @@ nav {
     background-color: #850805;
 }
 
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #nav {
     height: 5rem;
     margin: 0;
