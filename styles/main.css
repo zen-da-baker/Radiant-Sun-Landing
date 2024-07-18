@@ -45,6 +45,11 @@ nav {
     background-color: #850805;
 }
 
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #nav {
     height: 5rem;
     margin: 0;
@@ -74,6 +79,11 @@ nav {
 
 #footer-container {
     margin: 0;
+}
+
+#game-demos {
+    border: 0.5rem solid black;
+    margin-top: 5rem;
 }
 
 /* 4. Components
