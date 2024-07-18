@@ -72,6 +72,10 @@ nav {
     background-color: hsl(30, 10%, 95%);
 }
 
+#footer-container {
+    margin: 0;
+}
+
 /* 4. Components
 ======================================================= */
 
