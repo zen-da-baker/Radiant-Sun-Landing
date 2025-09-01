@@ -33,12 +33,12 @@ export default function Home() {
                                     <ul className="navbar-nav gy-3">
                                         <li className="nav-item">
                                             <a href="/images/Gamespawn Logo.svg" type="button" className="btn btn-outline-light" target="_blank" download>
-                                                <img src="images/Windows_logo_-_1992.svg" style="height:30px" /> Download Windows Version</a>
+                                                <img src="images/Windows_logo_-_1992.svg" style={{ height: "30px" }} /> Download Windows Version</a>
                                         </li>
 
                                         <li className="nav-item">
                                             <a href="/images/Gamespawn Logo.svg" type="button" className="btn btn-outline-light" target="_blank" download>
-                                                <img src="images/Apple_Computer_Logo_rainbow.svg" style="height:30px" /> Download Mac Version</a>
+                                                <img src="images/Apple_Computer_Logo_rainbow.svg" style={{ height: "30px" }} /> Download Mac Version</a>
                                         </li>
                                     </ul>
                                     
@@ -58,7 +58,7 @@ export default function Home() {
     <div className="container">
         <div className="row">
             <div className="col">
-                <h1 className="text-center" style="font-size:5rem;">Radiant Sun</h1>
+                <h1 className="text-center" style={{ fontSize: "5rem" }}>Radiant Sun</h1>
             </div>
         </div>
     </div>
@@ -140,7 +140,7 @@ export default function Home() {
     </div>
 
     <div className="container bg-dark" id="game-demos">
-        <h2 style="color: white">Play the game in the browser on desktop</h2>
+        <h2 style={{ color: "white" }}>Play the game in the browser on desktop</h2>
         <p className="color: white">The game button below will launch the game in your browser in a new tab.</p>
         <a href="demo/index.html" className="btn btn-primary" target="_blank" rel="noreferrer">Desktop Game Demo</a>
 
@@ -151,7 +151,7 @@ export default function Home() {
     <div className="container">
         <div className="row">
             <div className="col-4">
-                <div className="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div className="card text-white bg-success mb-3" style={{ maxWidth: "18rem" }}>
                     <div className="card-header">Saving the Game</div>
                     <div className="card-body">
                         <h3 className="card-title">Use the game menu to save the game</h3>
@@ -226,12 +226,12 @@ export default function Home() {
 
         <div id="gallery-1" className="row g-3">
             <div className="col">
-                <div className="card border-dark" style="bottom:0px; right:10px;">
+                <div className="card border-dark" style={{ bottom: "0px", right: "10px" }}>
                     <div className="card-header">
                         <div className="container">
                             <div className="row">
                                 <div className="col-4">
-                                    <img src="images/Gamespawn Logo.svg" style="width:80px;" className="d-inline" />
+                                    <img src="images/Gamespawn Logo.svg" style={{ width: "80px" }} className="d-inline" />
                                 </div>
                                 <div className="col">
                                     <h3 className="d-inline">Gamespawn</h3>
@@ -253,7 +253,7 @@ export default function Home() {
             </div>
 
             <div className="col">
-                <div className="card border-dark" style="bottom:0px; right:10px;">
+                <div className="card border-dark" style={{ bottom: "0px", right: "10px" }}>
                     <div className="card-header">
                         <div className="container">
                             <div className="row">
@@ -271,12 +271,12 @@ export default function Home() {
             </div>
 
             <div className="col">
-                <div className="card border-dark" style="bottom:0px; right:10px;">
+                <div className="card border-dark" style={{ bottom: "0px", right: "10px" }}>
                     <div className="card-header">
                         <div className="container">
                             <div className="row">
                                 <div className="col-4">
-                                    <img src="images/California_State_University,_Fullerton_seal.svg" style="width:80px;" className="d-inline" />
+                                    <img src="images/California_State_University,_Fullerton_seal.svg" style={{ width: "80px" }} className="d-inline" />
                                 </div>
 
                                 <div className="col">
