@@ -1,58 +1,13 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Header } from "./page-components/Header";
+import { Carolsel } from "./page-components/Carolsel";
+import { AboutGame } from "./page-components/AboutGame";
+import { GameInstructions } from "./page-components/GameInstructions";
 
 export default function Home() {
   return (
   <body>
-    <div>
-        <div className="row">
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
-
-                <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation" style="padding-right:10px;">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-
-                <div className="collapse navbar-collapse bg-dark" style={{ height: "75px;" }}>
-            
-                    <div className="container-fluid">
-                        <div className="row gy-3">
-
-                            <div className="col-6">
-                                <div className="container">
-                                    <a className="navbar-brand" href="index.html" style={{ paddingLeft: "20px" }}>
-                                        <img src="images/SilverSunValkyrie.png" style={{ width: "40px" }} />
-                                    Radiant Sun
-                                    </a>
-                                </div>
-                                
-                            </div>
-
-                            <div className="col-6">
-                                <div className="container">
-
-                                    <ul className="navbar-nav gy-3">
-                                        <li className="nav-item">
-                                            <a href="/images/Gamespawn Logo.svg" type="button" className="btn btn-outline-light" target="_blank" download>
-                                                <img src="images/Windows_logo_-_1992.svg" style={{ height: "30px" }} /> Download Windows Version</a>
-                                        </li>
-
-                                        <li className="nav-item">
-                                            <a href="/images/Gamespawn Logo.svg" type="button" className="btn btn-outline-light" target="_blank" download>
-                                                <img src="images/Apple_Computer_Logo_rainbow.svg" style={{ height: "30px" }} /> Download Mac Version</a>
-                                        </li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                    
-            </nav>
-        </div>
-        
-    </div>
+    
+    <Header />
     
 
     <div className="container">
@@ -63,154 +18,11 @@ export default function Home() {
         </div>
     </div>
 
-    <div className="container">
+    <Carolsel />
 
-        <div className="row">
+    <AboutGame />
 
-            <div className="col"></div>
-
-                <div className="col-md-8">
-
-                    <div id="carouselControl" className="carousel slide" data-bs-ride="carousel">
-
-                        <div className="carousel-indicators">
-                            <button data-bs-target="#carouselControl" data-bs-slide-to="0" className="active"></button>
-                            <button data-bs-target="#carouselControl" data-bs-slide-to="1"></button>
-                            <button data-bs-target="#carouselControl" data-bs-slide-to="2"></button>
-                        </div>
-
-                        <div className="carousel-inner">
-
-                            <div className="carousel-item active">
-                                <img className="d-block w-100" src="images/screenshot1.PNG" alt="Home base of the game" />
-                                
-                            </div>
-
-                            <div className="carousel-item">
-                                <img className="d-block w-100" src="images/screenshot2.PNG" alt="Traversing the world with a party" />
-                                
-                            </div>
-
-                            <div className="carousel-item">
-                                <img className="d-block w-100" src="images/screenshot3.PNG" alt="Battle against dark wing enemies" />
-                                
-                            </div>
-
-                        </div>
-
-                        <button className="carousel-control-prev rounded" type="button" data-bs-target="#carouselControl" data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="sr-only">Previous</span>
-                        </button>
-                        <button className="carousel-control-next rounded" type="button" data-bs-target="#carouselControl" data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="sr-only">Next</span>
-                        </button>
-                    </div>
-                
-                </div>
-
-
-            <div className="col"></div>
-
-        </div>
-
-    </div>
-
-    <div className="container">
-        <div className="row gy-3">
-
-            <div className="col"></div>
-
-            <div className="col-8">
-
-                <h2>Game Summary</h2>
-                <p>
-                    In the distant future, humans are born with magical abilities. The city of New Gem heroes called "Knights" protect people from those who wish to abuse 
-                    their powers. These people are known as "Outlaws."
-                    In New Gem City, a young man named Adam hopes to one day be a Knight. Unfortunately, he was born powerless. Not deterred by fate Adam 
-                    creates a magical suit of armor to protect the city from the local gang called Dark Wings. Along the way, he will make new friends and learn what 
-                    being a hero means.            
-                </p>
-            </div>
-            
-            <div className="col"></div>
-
-        </div>
-    </div>
-
-    <div className="container bg-dark" id="game-demos">
-        <h2 style={{ color: "white" }}>Play the game in the browser on desktop</h2>
-        <p className="color: white">The game button below will launch the game in your browser in a new tab.</p>
-        <a href="demo/index.html" className="btn btn-primary" target="_blank" rel="noreferrer">Desktop Game Demo</a>
-
-        <p className="color: white">Not on desktop? Play the game in your phone or tablet browser instead.</p>
-        <a href="demomobile/silver_sun/www/index.html" className="btn btn-secondary" target="_blank" rel="noreferrer">Mobile Game Demo</a>
-    </div>  
-
-    <div className="container">
-        <div className="row">
-            <div className="col-4">
-                <div className="card text-white bg-success mb-3" style={{ maxWidth: "18rem" }}>
-                    <div className="card-header">Saving the Game</div>
-                    <div className="card-body">
-                        <h3 className="card-title">Use the game menu to save the game</h3>
-                        <p className="card-text">
-                            Save files are stored in the browser's save data. The game save will not leave you device and will not be sent to the internet.
-                            <br />
-                            To resume the game, open the game in the same browser on the same device.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div className="col">
-                <h1 className="text-center">How to Play</h1>
-                <div className="row">
-                    <div className="col">
-                        <p>
-                            Mouse = Click on any menu item you'd like :)
-
-                            <br>
-
-                            Arrow Keys = Navigate menu and move character
-
-                            <br>
-
-                            Enter = Confirm
-
-                            <br>
-
-                            Spacebar = Jump 
-                        </p>
-                    </div>
-
-                    <div className="col">
-                        <p>
-                            ESC or X = Open menu
-
-                            <br>
-
-                            ESC = Back
-
-                            <br>
-
-                            F = Check enemy unit data
-
-                            <br>
-
-                            I = Show game objective hint
-
-                            <br>
-
-                            Shift + Arrow keys = Sprint
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>        
-    </div>
+    <GameInstructions />
 
     <div className="container">
         <div className="row">
@@ -258,7 +70,7 @@ export default function Home() {
                         <div className="container">
                             <div className="row">
                                 <div className="col-4">
-                                    <img src="images/UC_Riverside_seal.svg" className="width:80px;" className="d-inline" />
+                                    <img src="images/UC_Riverside_seal.svg" style={{ width: "80px" }} className="d-inline" />
                                 </div>
 
                                 <div className="col">
@@ -470,5 +282,5 @@ export default function Home() {
 
     
   </body>
-  );
+  )
 }
