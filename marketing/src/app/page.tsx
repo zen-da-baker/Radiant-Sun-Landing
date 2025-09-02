@@ -90,7 +90,7 @@ export default function Home() {
                         <div className="container">
                             <div className="row">
                                 <div className="col-4">
-                                    <img src="images/California_State_University,_Fullerton_seal.svg" style={{ width: "80px" }} className="d-inline" />
+                                    <img src="/images/California_State_University,_Fullerton_seal.svg" style={{ width: "80px" }} className="d-inline" />
                                 </div>
 
                                 <div className="col">
