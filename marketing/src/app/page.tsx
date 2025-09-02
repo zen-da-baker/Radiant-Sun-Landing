@@ -14,15 +14,6 @@ export default function Home() {
     <body>
     
         <Header />
-        
-
-        <div className="container">
-            <div className="row">
-                <div className="col">
-                    <h1 className="text-center" style={{ fontSize: "5rem" }}>Radiant Sun</h1>
-                </div>
-            </div>
-        </div>
 
         <Carolsel />
 
