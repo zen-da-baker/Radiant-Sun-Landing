@@ -3,6 +3,8 @@ import { Carolsel } from "./page-components/Carolsel";
 import { AboutGame } from "./page-components/AboutGame";
 import { GameInstructions } from "./page-components/GameInstructions";
 
+import "../../styles/main.css";
+
 export default function Home() {
   return (
   <body>
