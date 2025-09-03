@@ -1,5 +1,5 @@
 import { Header } from "./page-components/Header";
-import { Carolsel } from "./page-components/Carolsel";
+import { Carousel } from "./page-components/Carousel";
 import { AboutGame } from "./page-components/AboutGame";
 import { GameInstructions } from "./page-components/GameInstructions";
 import { Schools } from "./page-components/Schools";
@@ -15,7 +15,7 @@ export default function Home() {
     
         <Header />
 
-        <Carolsel />
+        <Carousel />
 
         <AboutGame />
 

@@ -89,6 +89,41 @@ nav {
 /* 4. Components
 ======================================================= */
 
+.btn {
+
+    padding: 1rem;
+
+    margin: 1rem;
+
+    color: black;
+
+    background-color: hsl(1, 0%, 85%);
+
+    border-radius: 0.5rem;
+
+    border: 0.1rem solid black;
+
+    box-shadow: 0.25rem 0.25rem hsl(1, 0%, 15%);
+
+    cursor: pointer;
+
+}
+
+.btn:hover {
+
+    background-color: hsl(1, 0%, 15%);
+
+    color: white;
+
+}
+
+.btn:active {
+
+    box-shadow: none;
+
+    transform: translate(0.25rem, 0.25rem);
+}
+
 #gameBackground {
     height: 92vh;
     width: 100vw;
