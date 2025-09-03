@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+import "../../../styles/carousel.css";
+
 export function Carousel() {
 
     interface Image {
@@ -73,9 +75,9 @@ export function Carousel() {
     return (
         <div className="carousel">
 
-            <img src={ currentImage.src } alt={ currentImage.alt } />
+            <img className="carousel-image" src={ currentImage.src } alt={ currentImage.alt } />
 
-            <div className="flex">
+            <div className="flex" style={{ width: "100%", justifyContent: "space-between" }}>
 
                 <button className="btn" onClick={ previousImage }>Previous</button>
 
