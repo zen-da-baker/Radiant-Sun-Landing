@@ -1,12 +1,18 @@
+import "../../../styles/footer.css";
+
 export function Footer() {
     
     return (
-        <footer className="py-3 my-4 bg-dark text-white" >
-            <div id="footer-container" className="container">
-                <p className="text-center">
-                    &copy; 2023 Radiant Sun Devs
-                </p>
-            </div>
+        <footer className="page-footer" >
+
+            <p className="text-center">
+
+                &copy; 2023 Radiant Sun Devs
+
+            </p>
+
+            <p>Website by ByteSized Crew</p>
+
         </footer>
     )
 }
