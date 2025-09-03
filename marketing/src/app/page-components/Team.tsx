@@ -135,7 +135,7 @@ export function Team() {
                     <p className="card-text">Play Tester</p>
 
                     <p className="card-text">
-                        John Henry Ronk, graduated className of 2022 at University of California Riverside with a bachelor's degree in creative writing. 
+                        John Henry Ronk, graduated class of 2022 at University of California Riverside with a bachelor's degree in creative writing. 
                         Has an interest in fiction, particularly speculative fiction, as well as culture, language, programming, and art.
                     </p>
 
