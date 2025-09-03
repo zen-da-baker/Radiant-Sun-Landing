@@ -79,9 +79,9 @@ export function Carousel() {
 
             <div className="flex" style={{ width: "100%", justifyContent: "space-between" }}>
 
-                <button className="btn" onClick={ previousImage }>Previous</button>
+                <button className="btn" onClick={ previousImage }>← Previous</button>
 
-                <button className="btn" onClick={ nextImage }>Next</button>
+                <button className="btn" onClick={ nextImage }>Next →</button>
 
             </div>
 

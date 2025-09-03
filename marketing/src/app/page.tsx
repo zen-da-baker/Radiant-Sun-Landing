@@ -19,25 +19,11 @@ export default function Home() {
 
         <AboutGame />
 
-        <GameInstructions />
-
-        <div className="container">
-            <div className="row">
-                <div className="col">
-                    <hr />
-                </div>
-            </div>
-        </div>
+        
 
         <Schools />
 
-            <div className="container">
-                <div className="row">
-                    <div className="col">
-                        <hr />
-                    </div>
-                </div>
-            </div>
+            
 
 
         <Team />
