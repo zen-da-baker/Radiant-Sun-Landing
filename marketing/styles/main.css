@@ -46,7 +46,7 @@ nav {
 }
 
 .flex {
-    
+
     display: flex;
 
     flex-wrap: wrap;
@@ -78,6 +78,14 @@ nav {
 
 .card {
     background-color: hsl(30, 10%, 95%);
+}
+
+.text-container {
+
+    width: 40rem;
+
+    margin: 0 auto;
+
 }
 
 #footer-container {
