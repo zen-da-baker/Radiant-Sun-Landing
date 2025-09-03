@@ -8,63 +8,58 @@ export function Schools() {
 
             <h1>Created in association with</h1>
 
-            <div id="gallery-1" className="row g-3">
+            <div className="flex">
                 
                 <div className="card flex" style={{ bottom: "0px", right: "10px" }}>
                 
-                    <img src="images/Gamespawn Logo.svg" style={{ width: "80px" }} className="d-inline" />
-                
-                
-                    <h3 className="d-inline">Gamespawn</h3>
+                    <div className="flex" style={{ gap: "1rem",  alignItems: "center", width: "100%" }}>
+
+                        <img src="images/Gamespawn Logo.svg" style={{ width: "80px" }} className="d-inline" />
+                    
+                    
+                        <h3 className="d-inline">Gamespawn</h3>
+
+                    </div>
                             
                 
-                        <p>
-                            Game development club at the University of California, Riverside.
-                        </p>
+                    <p>
+                        Game development club at the University of California, Riverside.
+                    </p>
 
-                        <a href="https://gamespawn.github.io/index.html" target="_blank" rel="noreferrer">
-                            <button className="btn">Organiztion Website</button>
-                        </a>
+                    <a href="https://gamespawn.github.io/index.html" target="_blank" rel="noreferrer">
+                        
+                        <button className="btn">Organiztion Website</button>
+
+                    </a>
                     
                 </div>
                 
+                <div className="card flex">
+                    
+                    <div className="flex" style={{ alignItems: "center", height: "5rem", gap: "1rem" }}>
 
-                <div className="col">
-                    <div className="card border-dark" style={{ bottom: "0px", right: "10px" }}>
-                        <div className="card-header">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-4">
-                                        <img src="images/UC_Riverside_seal.svg" style={{ width: "80px" }} className="d-inline" />
-                                    </div>
+                        <img src="images/UC_Riverside_seal.svg" style={{ width: "80px" }} className="d-inline" />
+                    
+                        <h3 className="d-inline">University of California, <br /> Riverside</h3>
 
-                                    <div className="col">
-                                        <h3 className="d-inline">University of California, <br /> Riverside</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
+                                
                 </div>
+                
+                <div className="card flex">
 
-                <div className="col">
-                    <div className="card border-dark" style={{ bottom: "0px", right: "10px" }}>
-                        <div className="card-header">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-4">
-                                        <img src="/images/California_State_University,_Fullerton_seal.svg" style={{ width: "80px" }} className="d-inline" />
-                                    </div>
+                    <div className="flex" style={{ alignItems: "center", height: "5rem", gap: "1rem" }}>
+                    
+                        <img src="/images/California_State_University,_Fullerton_seal.svg" style={{ width: "80px" }} className="d-inline" />
+                    
+                        <h3 className="d-inline">California State University, <br /> Fullerton.</h3>
 
-                                    <div className="col">
-                                        <h3 className="d-inline">California State University, <br /> Fullerton.</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
                     </div>
+                            
                 </div>
+                
             </div>
+
         </div>
     )
 }
