@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import "../../../styles/carousel.css";
+import "../../styles/carousel.css";
 
 export function Carousel() {
 

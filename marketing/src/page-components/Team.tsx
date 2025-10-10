@@ -1,4 +1,6 @@
-import "../../../styles/team.css";
+import "../../styles/team.css";
+
+import twitterLogo from "../../public/images/Logo_of_Twitter.svg";
 
 export function Team() {
 
@@ -73,7 +75,13 @@ export function Team() {
 
                     <a href="https://twitter.com/4kstarri" target="_blank" rel="noreferrer">
                     
-                        <button className="btn"> <img src="../../../public/images/Logo_of_Twitter.svg" alt="Twitter logo" /> @4kstarri </button>
+                        <button className="btn flex"> 
+                            
+                            <img src={ twitterLogo.src } height={ 20 } width={ 20 } alt="Twitter logo" /> 
+                            
+                            @4kstarri 
+                            
+                        </button>
                     
                     </a>
                     

@@ -1,5 +1,5 @@
-import "../../../styles/school-container.css";
-import "../../../styles/card.css";
+import "../../styles/school-container.css";
+import "../../styles/card.css";
 
 export function Schools() {
 
