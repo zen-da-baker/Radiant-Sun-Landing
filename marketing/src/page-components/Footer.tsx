@@ -17,9 +17,13 @@ export function Footer() {
                 
                 Website by 
 
-                <img src={ logo.src } height={ 20 } width={ 20 } alt="Orange fruit" /> 
+                <a href="https://bytesizedcrew.com" rel="noreferrer" target="_blank">
 
-                <span id="bytesized">ByteSized Crew</span>
+                    <img src={ logo.src } height={ 20 } width={ 20 } alt="Orange fruit" /> 
+
+                    <span id="bytesized">ByteSized Crew</span>
+
+                </a>
 
             </p>
 
