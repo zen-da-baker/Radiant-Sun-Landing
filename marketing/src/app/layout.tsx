@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Radiant Sun",
-  description: "This is the official landing page for the video game Radiant Sun.",
+  description: "This is the official landing page for the video game Radiant Sun. Radiant Sun is an Role Playing Game with super heroes.",
 };
 
 export default function RootLayout({
@@ -23,9 +23,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
+      <head>
+
+        <link rel="icon" href="/icons/bytesized-orange.png" />
+
+      </head>
+
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+
+        { children }
+
       </body>
+
     </html>
   );
 }
