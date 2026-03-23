@@ -10,18 +10,6 @@ import "../../styles/typography.css";
 
 export default function Home() {
 
-  async function viewCounter() {
-
-    const response = await fetch("https://api.bytesizedcrew.com/radiant-sun");
-
-    const jsonResponse = await response.json();
-
-    console.log( jsonResponse.msg );
-
-  }
-
-  viewCounter();
-
   return (
     <main>
     
@@ -31,16 +19,9 @@ export default function Home() {
 
         <AboutGame />
 
-        
-
         <Schools />
 
-            
-
-
         <Team />
-
-        <a href="#" className="btn btn-secondary" id="back-to-top">Back to Top</a>
             
         <Footer />
     
