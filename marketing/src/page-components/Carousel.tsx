@@ -13,9 +13,21 @@ export function Carousel() {
     }
 
     const images: Array<Image> = [
-        { src: "images/screenshot1.PNG", alt: "Home base of the game", id: 1 }, 
-        { src: "images/screenshot2.PNG", alt: "Traversing the world with a party", id: 2 }, 
-        { src: "images/screenshot3.PNG", alt: "Battle against dark wing enemies", id: 3 }
+        { 
+            src: "https://imagedelivery.net/F-fcHDYT3jDcMPQ0noeywA/f2f4e5f9-ee96-427a-bfab-1d8aa79c4a00/public", 
+            alt: "Home base of the game", 
+            id: 1 
+        }, 
+        { 
+            src: "https://imagedelivery.net/F-fcHDYT3jDcMPQ0noeywA/e367bda2-e7eb-4ba9-d75b-0db61c43a800/public", 
+            alt: "Traversing the world with a party", 
+            id: 2 
+        }, 
+        { 
+            src: "https://imagedelivery.net/F-fcHDYT3jDcMPQ0noeywA/745259c2-80f4-43cc-2f50-df8ca77c8200/public", 
+            alt: "Battle against dark wing enemies", 
+            id: 3 
+        }
     ]
 
     const [currentImage, setCurrentImage] = useState<Image>(images[0]);
