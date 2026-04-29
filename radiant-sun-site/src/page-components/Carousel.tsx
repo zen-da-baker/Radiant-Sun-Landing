@@ -14,23 +14,23 @@ export function Carousel() {
 
     const images: Array<Image> = [
         { 
-            src: "https://imagedelivery.net/F-fcHDYT3jDcMPQ0noeywA/f2f4e5f9-ee96-427a-bfab-1d8aa79c4a00/public", 
+            src: "/images/radiant-sun-screenshot1.PNG",
             alt: "Home base of the game", 
             id: 1 
         }, 
         { 
-            src: "https://imagedelivery.net/F-fcHDYT3jDcMPQ0noeywA/e367bda2-e7eb-4ba9-d75b-0db61c43a800/public", 
+            src: "/images/radiant-sun-screenshot2.PNG", 
             alt: "Traversing the world with a party", 
             id: 2 
         }, 
         { 
-            src: "https://imagedelivery.net/F-fcHDYT3jDcMPQ0noeywA/745259c2-80f4-43cc-2f50-df8ca77c8200/public", 
+            src: "/images/radiant-sun-screenshot3.PNG", 
             alt: "Battle against dark wing enemies", 
             id: 3 
         }
     ]
 
-    const [currentImage, setCurrentImage] = useState<Image>(images[0]);
+    const [ currentImage, setCurrentImage ] = useState<Image>( images[0] );
 
     function findImageIndex(): number {
          
@@ -89,7 +89,7 @@ export function Carousel() {
 
             <img className="carousel-image" src={ currentImage.src } alt={ currentImage.alt } />
 
-            <div className="flex" style={{ width: "100%", justifyContent: "space-between" }}>
+            <div className="flex" style={ { width: "100%", justifyContent: "space-between" } }>
 
                 <button className="btn" onClick={ previousImage }>← Previous</button>
 

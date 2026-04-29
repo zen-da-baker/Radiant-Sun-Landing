@@ -3,6 +3,7 @@ import { Carousel } from "@/page-components/Carousel";
 import { AboutGame } from "@/page-components/AboutGame";
 import { Schools } from "@/page-components/Schools";
 import { Team } from "@/page-components/Team";
+import { MessageForm } from "@/page-components/MessageForm";
 import { Footer } from "@/page-components/Footer";
 
 import "../../styles/main.css";
@@ -22,6 +23,8 @@ export default function Home() {
         <Schools />
 
         <Team />
+
+        <MessageForm />
             
         <Footer />
     
