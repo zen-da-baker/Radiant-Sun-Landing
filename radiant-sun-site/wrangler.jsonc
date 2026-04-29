@@ -13,13 +13,7 @@
   "services": [
     {
       "binding": "WORKER_SELF_REFERENCE",
-      "service": "marketing"
-    }
-  ],
-  "r2_buckets": [
-    {
-      "binding": "NEXT_INC_CACHE_R2_BUCKET",
-      "bucket_name": "marketing-opennext-cache"
+      "service": "radiant-sun-site"
     }
   ],
   "images": {
