@@ -45,6 +45,12 @@ nav {
     background-color: #850805;
 }
 
+main {
+
+    min-height: 70vh;
+
+}
+
 .flex {
 
     display: flex;
@@ -52,6 +58,8 @@ nav {
     flex-wrap: wrap;
 
     justify-content: center;
+
+    align-items: center;
 
 }
 
@@ -105,6 +113,14 @@ nav {
 
 /* 4. Components
 ======================================================= */
+
+header a {
+
+    color: white;
+
+    margin: 0.5rem;
+
+}
 
 .btn {
 

@@ -1,41 +1,37 @@
+// Import components
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { Header } from "@/page-components/Header";
+import { Footer } from "@/page-components/Footer";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// Import styling
+import "../../styles/main.css";
+import "../../styles/typography.css";
 
+// Create the meta data of the website applied to all pages
 export const metadata: Metadata = {
   title: "Radiant Sun",
   description: "This is the official landing page for the video game Radiant Sun. Radiant Sun is an Role Playing Game with super heroes.",
+  icons: "/icons/bytesized-orange.png"
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+// The root layout of all pages are applied of which the header and footer are included on all pages
+export default function RootLayout( { children } : Readonly < { children: React.ReactNode } > ) {
+  
   return (
     <html lang="en">
 
-      <head>
+      <body>
 
-        <link rel="icon" href="/icons/bytesized-orange.png" />
-
-      </head>
-
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Header />
 
         { children }
+
+        <Footer />
 
       </body>
 
     </html>
-  );
+  )
+
 }

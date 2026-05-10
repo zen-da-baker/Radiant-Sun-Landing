@@ -1,3 +1,6 @@
+/*
+    This component is a client side component that dynamically shows a carousel of screenshots of the game demo.
+*/
 "use client"
 
 import { useState } from "react";
