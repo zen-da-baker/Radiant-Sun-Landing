@@ -3,11 +3,19 @@
 // Import styling
 import "../../styles/status-banner.css";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function StatusBanner( { visible, status, message } : { visible: string, status: boolean, message: string } ) {
     
     const [ visibility, setVisibility ] = useState<string>( visible );
+
+    let statusBannerUI: HTMLElement | null;
+
+    useEffect( () => {
+
+        statusBannerUI = document.getElementById("status-banner");
+
+    }, [])
 
     let statusClass = "";
 
@@ -29,13 +37,13 @@ export function StatusBanner( { visible, status, message } : { visible: string, 
 
     }
 
-    const statusBannerUI = document.getElementById("status-banner");
-
+    /*
     if ( statusBannerUI !== null ) {
 
         statusBannerUI.style.visibility = visibility;
 
     }
+        */
 
     return (
         <div id="status-banner" className={ classes }>

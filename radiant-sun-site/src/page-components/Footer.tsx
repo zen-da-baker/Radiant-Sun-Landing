@@ -1,3 +1,7 @@
+// Import linking from NextJS
+import Link from "next/link";
+
+// Import styles
 import "../../styles/footer.css";
 
 import logo from "../../public/icons/bytesized-orange.png";
@@ -6,6 +10,20 @@ export function Footer() {
     
     return (
         <footer className="page-footer" >
+
+            <nav>
+
+                <Link href="/">Radiant Sun</Link>
+
+                <Link href="/contact">Contact Us</Link>
+
+                <Link href="/team">Our Team</Link>
+
+                <Link href="/blog">Blog</Link>
+
+                <Link href="/admin">Login</Link>
+
+            </nav>
 
             <p className="text-center">
 
