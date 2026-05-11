@@ -1,0 +1,41 @@
+.form {
+
+    border: 0.1rem solid black;
+
+    width: 40rem;
+
+    margin: 1rem auto;
+
+    padding: 1rem;
+
+}
+
+.form * {
+
+    margin: 0.5rem;
+
+}
+
+.form label {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+input, textarea {
+
+    border-radius: 0.5rem;
+
+    padding: 0.5rem;
+
+    width: 25rem;
+
+}
+
+textarea {
+
+    height: 12rem;
+
+}

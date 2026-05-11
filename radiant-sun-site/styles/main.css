@@ -63,6 +63,12 @@ main {
 
 }
 
+.column {
+
+    flex-direction: column;
+    
+}
+
 #nav {
     height: 5rem;
     margin: 0;
