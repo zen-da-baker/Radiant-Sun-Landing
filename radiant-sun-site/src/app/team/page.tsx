@@ -7,6 +7,8 @@ export default function TeamPage() {
     return (
         <main>
 
+            <h1>The Team</h1>
+
             <Team />
 
         </main>

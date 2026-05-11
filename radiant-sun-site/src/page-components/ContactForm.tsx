@@ -36,6 +36,11 @@ export function ContactForm( { formAction }: { formAction: any } ) {
     async function submitForm() {
 
         // Form validation taking place by ensuring the fields are not empty
+        if ( name === "" || email === "" || subject === "" || body === "" ) {
+
+            return;
+            
+        }
 
         // The form is submitted to the server component and a value of true is returned if the submission was successful and false otherwise
         const submissionSuccessful = await formAction( name, email, subject, body );
@@ -82,7 +87,7 @@ export function ContactForm( { formAction }: { formAction: any } ) {
     return (
         <div className="flex column form">
 
-            <StatusBanner visible={ visibility } status={ status } message={ message } />
+            { /* <StatusBanner visible={ visibility } status={ status } message={ message } /> */ }
 
             <label>
                 Name

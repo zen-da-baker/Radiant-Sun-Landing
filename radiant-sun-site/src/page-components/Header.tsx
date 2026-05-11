@@ -9,11 +9,11 @@ export function Header() {
 
             <div className="flex">
 
-                <img src="images/SilverSunValkyrie.png" style={{ width: "60px", height: "95px", margin: "0 1.5rem" }} />
+                <img src="images/SilverSunValkyrie.png" style={ { width: "60px", height: "95px", margin: "0 1.5rem" } } />
 
                 <Link href="/">
 
-                    <h2 className="text-center" style={{ fontSize: "5rem" }}>Radiant Sun</h2>
+                    <h2 className="text-center" style={ { fontSize: "3rem" } }>Radiant Sun</h2>
                 
                 </Link>
 

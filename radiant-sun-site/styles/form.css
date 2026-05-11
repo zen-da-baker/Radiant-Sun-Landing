@@ -1,6 +1,8 @@
 .form {
 
-    border: 0.1rem solid black;
+    background-color: hsl( 40, 25%, 80% );
+
+    border-radius: 0.5rem;
 
     width: 40rem;
 

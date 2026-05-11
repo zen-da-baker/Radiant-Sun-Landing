@@ -41,13 +41,33 @@ h1 {
 /* 3. Structure
 ======================================================= */
 
-nav {
-    background-color: #850805;
-}
-
 main {
 
     min-height: 70vh;
+
+}
+
+nav {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    margin: 1rem;
+
+}
+
+nav a {
+
+    color: white;
+
+}
+
+h1 {
+
+    text-align: center;
+
+    margin: 0.75rem auto;
 
 }
 
@@ -66,7 +86,7 @@ main {
 .column {
 
     flex-direction: column;
-    
+
 }
 
 #nav {
@@ -128,7 +148,7 @@ header a {
 
 }
 
-.btn {
+button, .btn {
 
     padding: 0.5rem;
 
@@ -148,7 +168,7 @@ header a {
 
 }
 
-.btn:hover {
+button:hover, .btn:hover {
 
     background-color: hsl(1, 0%, 15%);
 
@@ -156,7 +176,7 @@ header a {
 
 }
 
-.btn:active {
+button:active, .btn:active {
 
     box-shadow: none;
 

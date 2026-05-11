@@ -7,8 +7,6 @@ export function Team() {
     return (
         <div className="team-container">
 
-            <h2>Our Team</h2>
-
             <div className="flex">
                 
                 <div className="card">
