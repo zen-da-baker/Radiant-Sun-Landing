@@ -7,6 +7,8 @@ import { LoginForm } from "@/page-components/admin/LoginForm"
 // Import helper functions
 import { escapeStrings } from "@/helpers/escapeStrings";
 
+// Import models
+import { Token } from "../models/Token";
 
 /*
     This page is for the viewing of messages submitted to the website and 
@@ -16,7 +18,7 @@ export default function Admin() {
 
     let loggedIn = false;
 
-    async function handleLogin( username: string, password: string ): Promise<void> {
+    async function handleLogin( username: string, password: string ): Promise<string> {
 
         "use server"
 
@@ -31,7 +33,11 @@ export default function Admin() {
 
         // If the credentials are a match, return true, otherwise, return false
 
-        redirect("/");
+        // redirect("/");
+
+        const token = "token";
+
+        return token;
 
     }
 

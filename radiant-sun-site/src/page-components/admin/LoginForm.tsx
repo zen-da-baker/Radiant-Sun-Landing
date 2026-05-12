@@ -1,10 +1,13 @@
 "use client"
 
+// Import models
+import { Token } from "@/app/models/Token";
+
 // The component form for the client side
 export function LoginForm( 
     { handleLogin } 
     : 
-    { handleLogin: ( username: string, password: string ) => Promise<void> } 
+    { handleLogin: ( username: string, password: string ) => Promise<string> } 
 ) {
 
     // Local variables for storing the input values
@@ -36,7 +39,9 @@ export function LoginForm(
         }
 
         // Trigger the server function which is a network request
-        handleLogin( username, password );
+        const token = await handleLogin( username, password );
+
+        console.log( token );
 
     }
 
