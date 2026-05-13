@@ -35,7 +35,11 @@ export default function Admin() {
 
         // redirect("/");
 
+        // Create the token string to be issued to the user
+
         const token = "token";
+
+        // Store the token string on the server for validation
 
         return token;
 
