@@ -5,11 +5,19 @@ export class Token {
 
     tokenId: string;
 
+    expirationDate: string;
+
     status: boolean = false;
 
     constructor( ) {
 
         this.tokenId = createTokenString();
+
+        const currentDate = new Date();
+
+        currentDate.setDate( currentDate.getDate() + 14 );
+
+        this.expirationDate = currentDate.toString();
 
     }
 
