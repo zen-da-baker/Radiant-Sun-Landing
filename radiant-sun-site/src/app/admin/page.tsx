@@ -18,6 +18,8 @@ export default function Admin() {
 
     let loggedIn = false;
 
+    console.log( new Token() );
+
     async function handleLogin( username: string, password: string ): Promise<string> {
 
         "use server"
