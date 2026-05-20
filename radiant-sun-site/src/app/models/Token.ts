@@ -3,13 +3,17 @@ import { createTokenString } from "@/helpers/createTokenString";
 
 export class Token {
 
+    username: string;
+
     tokenId: string;
 
     expirationDate: string;
 
     status: boolean = false;
 
-    constructor( ) {
+    constructor( inputUsername: string = "" ) {
+
+        this.username = inputUsername;
 
         this.tokenId = createTokenString();
 
