@@ -1,7 +1,7 @@
 export function createRandomNumber( start: number, end: number ): number {
     
-    const number = Math.floor( start + Math.random() * end );
+    const number = Math.floor( Math.random() * ( end - start ) );
     
-    return number;
+    return number + start;
     
 }
