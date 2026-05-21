@@ -4,20 +4,21 @@ import { LoginForm } from "@/page-components/admin/LoginForm";
 // Import helper functions
 import { escapeStrings } from "@/helpers/escapeStrings";
 
+// Import data models
+import { Token } from "@/models/Token";
+
 export default function Login() {
 
-    async function handleLogin( username: string, password: string ): Promise<string> {
+    async function handleLogin( username: string ): Promise<string> {
     
             "use server"
     
             // Input strings escaped
-            username = escapeStrings( username );
-    
-            password = escapeStrings( password );
+            username = escapeStrings( username );    
     
             console.log( username );
     
-            console.log( password );
+            
     
             // If the credentials are a match, return true, otherwise, return false
     
