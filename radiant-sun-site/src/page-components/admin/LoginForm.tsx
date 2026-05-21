@@ -1,22 +1,35 @@
 "use client"
 
+// Import React components
+import { useState } from "react";
+
 // Import models
 import { Token } from "@/models/Token";
 
 // The component form for the client side
 export function LoginForm( 
-    { handleLogin } 
+    { handleUsernameSubmission } 
     : 
-    { handleLogin: ( username: string ) => Promise<string> } 
+    { handleUsernameSubmission: ( username: string ) => Promise<string> } 
 ) {
+
+    const [ question, setQuestion ] = useState<string>("");
 
     // Local variables for storing the input values
     let username: string = "";
+
+    let answer: string = "";
 
     // The local variable update functions
     function usernameHandler( event: any ) {
 
         username = event.target.value;
+
+    }
+
+    function answerHandler( event: any ) {
+
+        answer = event.target.value;
 
     }
 
@@ -31,9 +44,9 @@ export function LoginForm(
         }
 
         // Trigger the server function which is a network request
-        const token = await handleLogin( username );
+        const questionResponse = await handleUsernameSubmission( username );
 
-        console.log( token );
+        setQuestion( questionResponse );
 
     }
 
@@ -46,6 +59,14 @@ export function LoginForm(
                 Username
                 <input type="text" placeholder="Username..." onChange={ usernameHandler } />
 
+            </label>
+
+            <label>
+                Question
+                <p>{ question }</p>
+                {
+                    question ? <input type="text" placeholder="Answer..." onChange={ answerHandler } /> : null
+                }
             </label>
 
             <button onClick={ handleLoginSubmission }>Login</button>

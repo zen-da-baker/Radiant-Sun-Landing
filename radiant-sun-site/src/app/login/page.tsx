@@ -3,6 +3,7 @@ import { LoginForm } from "@/page-components/admin/LoginForm";
 
 // Import helper functions
 import { escapeStrings } from "@/helpers/escapeStrings";
+import { handleUsernameSubmission } from "@/helpers/login-server-functions/handleUsernameSubmission";
 
 // Import data models
 import { Token } from "@/models/Token";
@@ -39,7 +40,7 @@ export default function Login() {
 
             <h1>Login</h1>
 
-            <LoginForm handleLogin={ handleLogin } />
+            <LoginForm handleUsernameSubmission={ handleUsernameSubmission } />
 
         </main>
     )
