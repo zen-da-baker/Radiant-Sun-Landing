@@ -21,7 +21,7 @@ export function Footer() {
 
                 <Link href="/blog">Blog</Link>
 
-                <Link href="/admin">Login</Link>
+                <Link href="/login">Login</Link>
 
             </nav>
 

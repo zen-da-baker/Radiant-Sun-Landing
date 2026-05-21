@@ -8,7 +8,7 @@ import { LoginForm } from "@/page-components/admin/LoginForm"
 import { escapeStrings } from "@/helpers/escapeStrings";
 
 // Import models
-import { Token } from "../models/Token";
+import { Token } from "../../models/Token";
 
 /*
     This page is for the viewing of messages submitted to the website and 

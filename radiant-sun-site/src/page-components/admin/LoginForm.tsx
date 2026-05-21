@@ -1,7 +1,7 @@
 "use client"
 
 // Import models
-import { Token } from "@/app/models/Token";
+import { Token } from "@/models/Token";
 
 // The component form for the client side
 export function LoginForm( 
